@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!--  spring boot 기본으로 설정 된 logback   -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <!--  다양한 Profile 에 따른 로그백 설정  -->
+    <include resource="logback-spring-${spring.profiles.active}.xml"/>
+
+</configuration>
